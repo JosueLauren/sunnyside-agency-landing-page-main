@@ -341,8 +341,38 @@ div.redes-sociais a:hover {
     section.sessão-1 {
         background-image: url(images/mobile/image-header.jpg);
     }
+
+    .active {
+        display: flex !important;
+    }
+
     nav.menu-nav {
         display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        background-color: var(--White);
+        width: 90%;
+        top: 80px;
+    }
+
+    nav.menu-nav::after {
+        content: " ";
+        position: absolute;
+        bottom: 100%;
+        right: 0%;
+        border-width: 10px;
+        border-style: solid;
+        border-color: transparent var(--White) var(--White ) transparent;
+    }
+    nav.menu-nav a {
+        color: var(--Dark-grayish-blue);
+        margin: 20px auto;
+    }
+
+    a.contato {
+        color: var(--Dark-blue) !important;
+        background-color: var(--Yellow) !important;
     }
 
     .iconeMenuMobile {
